@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Banco Itaú</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo-itau"
+        src="./src/logo-itau 1.png"
+        alt="logo banco itau"
+      />
+      <img
+        class="logo-itau-empresas"
+        src="./src/ItauEmpresasText 1.png"
+        alt="itau empresas"
+      />
+    </header>
+    <h1 class="abertura-de-conta">Abertura de conta PJ</h1>
+    <main>
+      <form>
+        <div class="titulo-main">
+          <h3>vamos começar?</h3>
+        </div>
+
+        <div class="form-container-flex">
+          <div class="form-item form-item-cnpj">
+            <label for="cnpj">cnpj</label>
+            <input
+              id="cnpj"
+              class="input-padrao input-cnpj"
+              type="text"
+              name="cnpj"
+              placeholder="00.000.000/0001-00" 
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="razao social">razão social</label>
+            <input
+              id="razao-social"
+              class="input-padrao input-razao-social"
+              type="text"
+              name="razao social"
+              placeholder="Oliveira Azeites LTDA"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="cpf do representante">cpf do representante legal</label>
+            <input
+              id="cpf-do-representante"
+              class="input-padrao input-cpf-do-representante"
+              type="text"
+              name="cpf do representante"
+              placeholder="000.000.000-00"
+              required
+          />
+          </div>
+
+          <div class="form-item form-item-nome-do-representante">
+            <label for="nome do representante"
+              >nome do representante legal</label
+            >
+            <input
+              id="nome-do-representante"
+              class="input-padrao input-nome-do-representante"
+              type="text"
+              name="nome do representante"
+              placeholder="Olivardo Oliveira da Silva"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="apelido">como deseja ser chamado?</label>
+            <input
+              id="como-deseja-ser-chamado"
+              class="input-padrao input-apelido"
+              type="text"
+              name="apelido"
+              placeholder="SR.Olivardo"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="numero de funcionarios"
+              >quantidades de funcionários</label
+            >
+            <input
+              id="quantia-de-funcionarios"
+              class="input-padrao input-numero-de-funcionarios"
+              type="text"
+              name="numero de funcionarios"
+              placeholder="1.000"
+              required
+            />
+          </div>
+
+          <div class="form-item form-item-faturamento-anual">
+            <label for="faturamento anual">faturamento anual</label>
+            <input
+              id="faturamento-anual"
+              class="input-padrao input-faturamento-anual"
+              type="text"
+              name="faturamento anual"
+              placeholder="R$1.000.000,00"
+              required
+            />
+          </div>
+          <div class="checkbox-flex">
+            <input
+              id="checkbox-item"
+              class="checkbox"
+              type="checkbox"
+              name="mesmo nome do representante legal"
+              required
+            />
+            <label for="mesmo nome do representante legal"
+              >mesmo nome do representante legal</label
+            >
+          </div>
+        </div>
+
+        <div class="buttons">
+          <a class="abrir-conta-pj" href="./pages/confirmacao.html"
+            >abrir conta pj</a
+          >
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

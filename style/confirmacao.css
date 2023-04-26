@@ -1,0 +1,35 @@
+@import url(../style.css);
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-voltar{
+  text-decoration: none;
+  color: #000000;
+  text-align:center ;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: var(--fonte--principal);
+  border-radius: 8px;
+  border: 3px solid #000000;
+  padding: 12px 54px;
+  margin-left: 60px;
+}
+
+.button-voltar:active{
+  border: #106eb0;
+}
+.button-continuar{
+  text-decoration: none;
+  color: var(--fonte--principal);
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: var(--fundo--e--button);
+  border-radius: 8px;
+  border: none;
+  padding: 12px 65px;
+  margin-right: 60px;
+}

@@ -1,0 +1,99 @@
+:root {
+  --fundo: #ec7000;
+  --fonte--principal: #ffffff;
+  --cor--textos--cards--e--lists: #56504c;
+  --top--cards: #106eb0;
+  --cor--do--strong: #000000;
+}
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+body {
+  background: var(--fundo);
+}
+.logo-itau {
+  margin: 29px 64px;
+}
+.logo-itau-empresas {
+  margin-bottom: 25px;
+}
+
+.abertura-de-conta {
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  color: var(--fonte--principal);
+}
+.section-left{
+  margin-top: 84px;
+}
+.parabenizacao {
+  font-weight: 700;
+  font-size: 60px;
+  color: var(--fonte--principal);
+  margin-left: 67px;
+}
+.beneficios {
+  margin: 36px 0 0 67px;
+  font-weight: 700;
+  font-size: 60px;
+  color: var(--fonte--principal);
+}
+.banco-de-dados {
+  width: 584px;
+  height: 404.47px;
+  background-color: var(--fonte--principal);
+  border-radius: 8px;
+  margin:36px 0 0 67px;
+}
+.dados-da-conta {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 24px;
+}
+.items-li {
+  list-style-type: none;
+  padding: 13px;
+  color: var(--cor--textos--cards--e--lists);
+  font-weight: 700;
+  font-size: 24px;
+}
+.items-li strong {
+  color: var(--cor--do--strong);
+}
+main {
+  display: flex;
+}
+section {
+  width: 50%;
+}
+.cards-items {
+  width: 316px;
+  height: 216.63px;
+  background-color: var(--fonte--principal);
+  border-top: 10px solid var(--top--cards);
+  border-radius: 8px;
+  margin: 30px 33px;
+}
+.titulos-cards {
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 12px;
+}
+.textos-cards {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--cor--textos--cards--e--lists);
+  margin:19px 0 0 16px;
+}
+.cards-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.alinhando-items {
+  display: flex;
+  align-items: center;
+  margin:32px 0 0 16px ;
+}

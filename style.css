@@ -1,0 +1,142 @@
+:root {
+  --fundo--e--button: #ec7000;
+  --fonte--principal: #ffffff;
+  --input--primario: #d9d9d9;
+  --input--secundario: #56504c;
+  --cor--placeholder: #000000;
+  --cor-checkbox:#d3cfcf;
+}
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+body {
+  background: var(--fundo--e--button);
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 46px;
+}
+.logo-itau {
+  margin: 29px 64px;
+}
+.logo-itau-empresas {
+  margin-bottom: 25px;
+}
+.abertura-de-conta {
+  text-align: center;
+  color: var(--fonte--principal);
+  font-size: 45px;
+  font-weight: 700;
+}
+.titulo-main {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  padding-top: 15px;
+}
+form {
+  background: var(--fonte--principal);
+  height: 702px;
+  width: 1024px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.form-item label {
+  color: var(--input--secundario);
+  font-weight: 700;
+  font-size: 18px;
+  padding: 15px;
+}
+.form-container-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 43px 0 0 ;
+}
+.form-item-nome-do-representante {
+  margin-left: 25px;
+}
+.form-item-faturamento-anual {
+  margin-left: 44px;
+}
+.input-padrao {
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+.input-padrao:placeholder-shown {
+  padding-left: 25px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: var(--cor--placeholder);
+}
+.input-cnpj {
+  width: 269px;
+  height: 57px;
+}
+.input-razao-social {
+  width: 474px;
+  height: 57px;
+}
+.input-cpf-do-representante {
+  width: 242px;
+  height: 57px;
+}
+.input-nome-do-representante,
+.input-apelido {
+  width: 264px;
+  height: 57px;
+}
+.input-numero-de-funcionarios {
+  width: 164px;
+  height: 57px;
+}
+.input-faturamento-anual {
+  width: 210px;
+  height: 57px;
+}
+.checkbox {
+  width: 19px;
+  height: 18px;
+  border: none;
+  background-color:var(--cor-checkbox) ;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+} 
+.checkbox-flex label{
+  font-weight: 700;
+  font-size: 12px;
+}
+.checkbox-flex {
+  margin-left: 110px;
+}
+
+.abrir-conta-pj{
+  text-decoration: none;
+  color: var(--fonte--principal);
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: var(--fundo--e--button);
+  border-radius: 8px;
+  border: none;
+  padding: 15px 45px;
+}
+.buttons {
+  margin: 125px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
