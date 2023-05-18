@@ -5,6 +5,7 @@
   --input--secundario: #56504c;
   --cor--placeholder: #000000;
   --cor-checkbox:#d3cfcf;
+  --invalid-color:#b71c1c;
 }
 html,
 body {
@@ -60,19 +61,26 @@ form {
 .form-item {
   display: flex;
   flex-direction: column;
-  margin: 30px 43px 0 0 ;
+  margin: 30px 20px 0 0 ;
 }
 .form-item-nome-do-representante {
   margin-left: 25px;
 }
 .form-item-faturamento-anual {
-  margin-left: 44px;
+  margin-left: 63px;
 }
 .input-padrao {
   border: none;
   border-radius: 8px;
   font-weight: 700;
   font-family: "Inter", sans-serif;
+  margin-left: 20px;
+}
+input:invalid{
+  border: 1px solid var(--invalid-color);
+}
+span{
+  color: var(--invalid-color);
 }
 .input-padrao:placeholder-shown {
   padding-left: 25px;
@@ -122,8 +130,7 @@ form {
 .checkbox-flex {
   margin-left: 110px;
 }
-
-.abrir-conta-pj{
+.botao{
   text-decoration: none;
   color: var(--fonte--principal);
   text-align: center;
@@ -133,6 +140,12 @@ form {
   border-radius: 8px;
   border: none;
   padding: 15px 45px;
+}
+.botao:disabled{
+  background-color: var(--input--secundario);
+}
+.botao:hover{
+  cursor:pointer;
 }
 .buttons {
   margin: 125px auto 0 auto;

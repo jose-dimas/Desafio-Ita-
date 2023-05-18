@@ -29,119 +29,126 @@
     </header>
     <h1 class="abertura-de-conta">Abertura de conta PJ</h1>
     <main>
-      <form>
+      <form action="./pages/confirmacao.html" data-formulario>
         <div class="titulo-main">
           <h3>vamos começar?</h3>
         </div>
 
         <div class="form-container-flex">
-          <div class="form-item form-item-cnpj">
+          <fieldset class="form-item form-item-cnpj">
             <label for="cnpj">cnpj</label>
             <input
               id="cnpj"
               class="input-padrao input-cnpj"
               type="text"
               name="cnpj"
-              placeholder="00.000.000/0001-00" 
+              placeholder="00.000.000/0001-00"
               required
+              minlength="18"
+              maxlength="18"
             />
-          </div>
+            <span class="mensagemErro"></span>
+          </fieldset>
 
-          <div class="form-item">
-            <label for="razao social">razão social</label>
+          <fieldset class="form-item">
+            <label for="razaoSocial">razão social</label>
             <input
-              id="razao-social"
+              id="razaoSocial"
               class="input-padrao input-razao-social"
               type="text"
-              name="razao social"
+              name="razaoSocial"
               placeholder="Oliveira Azeites LTDA"
               required
             />
-          </div>
+            <span class="mensagemErro"></span>
+          </fieldset>
 
-          <div class="form-item">
-            <label for="cpf do representante">cpf do representante legal</label>
+          <fieldset class="form-item">
+            <label for="cpf">cpf do representante legal</label>
             <input
-              id="cpf-do-representante"
+              id="cpf"
               class="input-padrao input-cpf-do-representante"
               type="text"
-              name="cpf do representante"
+              name="cpf"
               placeholder="000.000.000-00"
               required
-          />
-          </div>
+              minlength="14"
+              maxlength="14"
+            />
+            <span class="mensagemErro"></span>
+          </fieldset>
 
-          <div class="form-item form-item-nome-do-representante">
-            <label for="nome do representante"
-              >nome do representante legal</label
-            >
+          <fieldset class="form-item form-item-nome-do-representante">
+            <label for="nomeDoRepresentante">nome do representante legal</label>
             <input
-              id="nome-do-representante"
+              id="nomeDoRepresentante"
               class="input-padrao input-nome-do-representante"
               type="text"
-              name="nome do representante"
+              name="nomeDoRepresentante"
               placeholder="Olivardo Oliveira da Silva"
               required
             />
-          </div>
+            <span class="mensagemErro"></span>
+          </fieldset>
 
-          <div class="form-item">
+          <fieldset class="form-item">
             <label for="apelido">como deseja ser chamado?</label>
             <input
-              id="como-deseja-ser-chamado"
+              id="apelido"
               class="input-padrao input-apelido"
               type="text"
               name="apelido"
               placeholder="SR.Olivardo"
               required
             />
-          </div>
+            <span class="mensagemErro"></span>
+          </fieldset>
 
-          <div class="form-item">
-            <label for="numero de funcionarios"
+          <fieldset class="form-item">
+            <label for="numeroDeFuncionarios"
               >quantidades de funcionários</label
             >
             <input
-              id="quantia-de-funcionarios"
+              id="numeroDeFuncionarios"
               class="input-padrao input-numero-de-funcionarios"
               type="text"
-              name="numero de funcionarios"
+              name="numeroDeFuncionarios"
               placeholder="1.000"
               required
             />
-          </div>
+            <span class="mensagemErro"></span>
+          </fieldset>
 
-          <div class="form-item form-item-faturamento-anual">
-            <label for="faturamento anual">faturamento anual</label>
+          <fieldset class="form-item form-item-faturamento-anual">
+            <label for="faturamentoAnual">faturamento anual</label>
             <input
-              id="faturamento-anual"
+              id="faturamentoAnual"
               class="input-padrao input-faturamento-anual"
               type="text"
-              name="faturamento anual"
+              name="faturamentoAnual"
               placeholder="R$1.000.000,00"
               required
             />
-          </div>
+            <span class="mensagemErro"></span>
+          </fieldset>
           <div class="checkbox-flex">
             <input
-              id="checkbox-item"
+              id="mesmoNomeDoRepresentanteLegal"
               class="checkbox"
               type="checkbox"
-              name="mesmo nome do representante legal"
+              name="mesmoNomeDoRepresentanteLegal"
               required
             />
-            <label for="mesmo nome do representante legal"
+            <label for="mesmoNomeDoRepresentanteLegal"
               >mesmo nome do representante legal</label
             >
           </div>
         </div>
-
         <div class="buttons">
-          <a class="abrir-conta-pj" href="./pages/confirmacao.html"
-            >abrir conta pj</a
-          >
+          <button disabled="disabled" class="botao" id="button">abrir conta pj</button>
         </div>
       </form>
     </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>
